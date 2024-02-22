@@ -25,6 +25,10 @@ body {
     background-color: var(--dark-bacground);
 }
 
+.dark-mode .bar {
+    background-color: var(--main-background);
+}
+
 main {
     margin-left: 5em;
     margin-right: 5em;
