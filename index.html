@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abigail Cherdy Hartono">
+    <meta name="description" content="Europe Tour and Travel Website">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>PassePort</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-container">
+            <div class="logo-title">
+                <a href="#" class="logo-link" aria-label="Go to homepage">
+                    <img class="logo-img" src="assets/suitcase-travel-vacation-svgrepo-com.svg" alt="Suitcase Icon">
+                </a>
+                <h1>PassePort</h1>
+            </div>
+            <div class="web-title">
+            </div>
+                <ul class="nav-menu">
+                    <li class="navitem">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#">Tours</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+            </div>
+    </nav>
+
+    <script src="script.js"></script>
+
+    <header>
+        <h1>Welcome to PassePort</h1>
+        <p>Your answer to your travel questions</p>
+    </header>
+
+    <main>
+        <section>
+            <div class="section-title">
+                <h1>About Us</h1>
+            </div>
+                <div class="about-container">
+                    <p>PassePort is a premier Europe travel company specializing in curated experiences across the continent. With a passion for exploration and a commitment to exceptional service, PassePort offers personalized itineraries that cater to every traveler's preferences and interests. </p>
+                    <picture>
+                        <source media="(min-width:768px)" srcset="assets/arcdetriomphe.jpg">
+                        <img src="assets/eiffel.jpg" alt="Paris famous landmark">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">
+                <h1>Tours</h1>
+            </div>
+            <div class="grid-gallery">
+                <p class="gallery-item" id="item1">PARIS</p>
+                <p class="gallery-item" id="item2">VIENNA</p>
+                <p class="gallery-item" id="item3">VENICE</p>
+                <p class="gallery-item" id="item4">AMSTERDAM</p>
+                <p class="gallery-item" id="item5">ZERMATT</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">
+                <h1>Gallery</h1>
+            </div>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Cinque_Terre_DSC_6954_%2814250460371%29.jpg/1200px-Cinque_Terre_DSC_6954_%2814250460371%29.jpg" alt="Berlin city center">
+                    <img id="slide-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Budapest_Hungarian_Parliament_%2831363963556%29.jpg/1200px-Budapest_Hungarian_Parliament_%2831363963556%29.jpg" alt="Budapest city center">
+                    <img id="slide-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1200px-Stadtbild_M%C3%BCnchen.jpg" alt="Italian Riviera">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1" aria-label="slide 1 photo"></a>
+                    <a href="#slide-2" aria-label="slide 2 photo"></a>
+                    <a href="#slide-3" aria-label="slide 3 photo"></a>
+                </div>
+            </div>
+        </section>
+        <div class="section-title">
+            <h1>Contact</h1>
+            <p>Input your details below so we can reach out to you!</p>
+        </div>
+        <div>
+        </div>
+        <div>
+            <form action="">
+                <div class="form-container">
+                    <input type="text" placeholder="Your Name" name="fname" id="fname" required>
+                    <input type="text" placeholder="Your Email" name="femail" id="femail" required>
+                    <input type="text" placeholder="Your Mobile" name="fmobile" id="fmobile">
+                    <input type="submit" id="submit" class="button">
+                </div>
+                
+            </form>
+        </div>
+        <section>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p> © 2024 PassePort. All Rights Reserved.</p>
+            <div>
+                <button onclick="myFunction()" class="darkmode-btn">Dark Mode</button>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

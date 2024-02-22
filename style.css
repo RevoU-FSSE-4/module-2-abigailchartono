@@ -1,0 +1,432 @@
+:root {
+    --primary-colour: #2FD9B9;
+    --main-background:#FFFFFF;
+    --dark-bacground: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--main-background);
+}
+
+main {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.logo-img {
+    width: 3em;
+    height: 3em;
+    transition: all 0.8s ease-in 0.2s;
+    animation-duration: 4s;
+    animation-name: tilt;
+    animation-delay: 1s;
+}
+
+@keyframes tilt{
+    from {
+        transform: rotate(0turn);
+    }
+    50% {
+        transform: rotate(0.1turn);
+    }
+    to {
+        transform: rotate(0turn);
+    }
+}
+
+.logo-img:hover {
+    transform: rotate(0.1turn);
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.navbar-container {
+    display: flex;
+    padding: 1.5em;
+    margin: 0;
+    top: 0;
+    position: sticky;
+    gap: 10vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--main-background);
+    z-index: 999;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6vw;
+}
+
+li {
+    list-style: none;
+    font-weight: 700;
+}
+
+a {
+    color: var(--primary-text);
+    text-decoration: none;
+    transition: all 0.8s ease 0.2s;
+}
+
+a:hover {
+    color: var(--primary-colour);
+    text-shadow: var(--primary-text);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.8s ease-in-out 0.2s;
+    background-color: var(--dark-bacground);
+}
+
+
+@media (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        }
+
+    .hamburger:hover {
+        .bar{
+            background-color: var(--primary-colour);
+        }
+    }
+
+    main {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        top: 6em;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--main-background);
+        width: 100%;
+        text-align: center;
+        transition: 0.7s;
+        font-weight: 800;
+        z-index: 999;
+    }
+
+    .navitem {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-container input{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px;
+        gap: 0.5em;
+    }
+}
+
+header {
+    height: 34em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(assets/amsterdam.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header > h1 {
+    color: var(--main-background);
+    text-shadow: 10px 5px 20px var(--dark-bacground);
+    font-size: 2.5em;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+header > p {
+    color: var(--main-background);
+    font-weight: 600;
+    text-shadow: 10px 5px 20px var(--primary-text);
+    font-size: 1.5em;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        text-align: center;
+    }
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 6em;
+    padding-bottom: 4em;
+}
+
+.about-container {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.about-container > p {
+    font-size: 18px;
+}
+
+.mobile-img {
+    width: 300px;
+    object-fit: cover;
+}
+
+
+.gallery-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(100%);
+    cursor: pointer;
+    transition: all 0.8s ease 0.4s;
+    text-align: center;
+    top: 100%;
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--main-background);
+    text-shadow: 10px 10px 20px var(--primary-text)
+}
+
+.gallery-item:hover {
+    filter: none;
+}
+
+.grid-gallery #item1 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-image: url(https://images.pexels.com/photos/3879071/pexels-photo-3879071.jpeg?cs=srgb&dl=pexels-alex-azabache-3879071.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-gallery #item2 {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    background-image: url(https://www.h-hotels.com/_Resources/Persistent/b/5/8/7/b5879b8d0c12e16d528497b01e1254569019ad73/stephansdom-wien-03.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-gallery #item3 {
+    grid-column: 4;
+    grid-row: 1;
+    background-image: url(https://static.toiimg.com/photo/msid-98477448,width-96,height-65.cms);
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-gallery #item4 {
+    grid-column: 2;
+    grid-row: 2;
+    background-image: url(https://static01.nyt.com/images/2023/09/24/multimedia/24-36Hrs-Amsterdam-01-01-cwqt/24-36Hrs-Amsterdam-01-01-cwqt-mobileMasterAt3x-v2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-gallery #item5 {
+    grid-column: 3 / 5;
+    grid-row: 2;
+    background-image: url(https://arzotravels.com/wp-content/uploads/2017/11/Matterhorn-and-Zermatt-in-the-Swiss-Alps-best-places-to-ski.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    box-shadow: 1px 5px 5px 5px var(--dark-bacground);
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0% , 0.25);
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--main-background);
+    opacity: 0.75;
+    transition: opacity ease 0.25s;
+}
+
+.slider-nav a:hover {
+    opacity: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+.footer-container > p {
+    font-size: 1em;
+}
+
+.night-svg {
+    height: 36px;
+    padding-left: 3em;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    padding-bottom: 6em;
+}
+
+input {
+    height: 3em;
+    width: 50%;
+    text-align: center;
+    border-radius: 1em;
+    border: 1px solid var(--primary-colour);
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--primary-colour);
+
+}
+
+.button {
+    background-color: var(--main-background);
+    cursor: pointer;
+    transition: all 0.8s ease 0.2s;
+}
+
+.button:hover {
+    background-color: var(--primary-colour);
+    color: var(--main-background);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    align-items: center;
+}
+
+.footer-container > p {
+    font-size: 0.75em;
+}
+
+.darkmode-btn {
+    border: 1px solid var(--primary-colour);
+    background-color: var(--main-background);
+    padding: 0.5em;
+    color: var(--primary-colour);
+    cursor: pointer;
+    transition: all 0.8s ease 0.2s;
+}
+
+.darkmode-btn:hover {
+    background-color: #2FD9B9;
+    color: var(--main-background);
+}
