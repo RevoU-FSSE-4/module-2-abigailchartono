@@ -12,6 +12,17 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--main-background);
+    color: var(--dark-bacground);
+    transition: all 1s ease;
+}
+
+.dark-mode{
+    background-color: var(--dark-bacground);
+    color: var(--main-background);
+}
+
+.dark-mode > nav {
+    background-color: var(--dark-bacground);
 }
 
 main {
@@ -70,6 +81,7 @@ nav {
     top: 0;
     background-color: var(--main-background);
     z-index: 999;
+    transition: all 1s ease;
 }
 
 .nav-menu {
@@ -388,11 +400,11 @@ input {
     font-size: 1em;
     font-weight: 500;
     color: var(--primary-colour);
-
+    background-color: transparent;
 }
 
 .button {
-    background-color: var(--main-background);
+    background-color: transparent;
     cursor: pointer;
     transition: all 0.8s ease 0.2s;
 }
@@ -419,7 +431,7 @@ input {
 
 .darkmode-btn {
     border: 1px solid var(--primary-colour);
-    background-color: var(--main-background);
+    background-color: transparent;
     padding: 0.5em;
     color: var(--primary-colour);
     cursor: pointer;
