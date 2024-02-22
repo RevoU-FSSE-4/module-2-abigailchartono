@@ -191,6 +191,14 @@ a:hover {
         width: 90%;
     }
 
+    .dark-mode .navitem {
+        color: var(--main-background);
+    }
+
+    .dark-mode .nav-menu.active{
+        background-color: var(--dark-bacground);
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
