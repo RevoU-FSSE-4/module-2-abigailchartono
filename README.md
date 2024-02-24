@@ -22,7 +22,7 @@ My submission on this checkpoint assignment is [index.html](index.html), [style.
 
 The website title is PassePort. It is meant to be a website about 
 
-### A little overview about PassePort
+## A little overview about PassePort
 
 PassePort is a European specific tour and travel provider that can arrange tours all across Europe from Paris to Zermatt. 
 
@@ -59,3 +59,6 @@ This page contains an image carousel implemented using only CSS and HTML. The ci
 The footer has the author details, and a button to switch mode. When click, it will switch the whole page into Dark Mode or vice versa. There is a DOM local storage update through js so the mode chosen will pertain regardless of closing the tab. 
 
 ![The dark mode](assets/darkmode.png)
+
+
+## Module Assignent
