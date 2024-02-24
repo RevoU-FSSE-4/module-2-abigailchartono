@@ -199,6 +199,17 @@ a:hover {
         background-color: var(--dark-bacground);
     }
 
+    .tours {
+        height: 1350px;
+    }
+
+    .grid-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+        height: 200px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -269,7 +280,6 @@ header > p {
     width: 300px;
     object-fit: cover;
 }
-
 
 .gallery-item {
     display: flex;
