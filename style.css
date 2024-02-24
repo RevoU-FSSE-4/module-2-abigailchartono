@@ -234,7 +234,7 @@ header {
 
 header > h1 {
     color: var(--main-background);
-    text-shadow: 10px 5px 20px var(--dark-bacground);
+    text-shadow: 5px 5px var(--dark-bacground);
     font-size: 2.5em;
     animation-duration: 3s;
     animation-name: slidein;
@@ -243,7 +243,7 @@ header > h1 {
 header > p {
     color: var(--main-background);
     font-weight: 600;
-    text-shadow: 10px 5px 20px var(--primary-text);
+    text-shadow: 5px 5px var(--dark-bacground);
     font-size: 1.5em;
     animation-duration: 3s;
     animation-name: slidein;
