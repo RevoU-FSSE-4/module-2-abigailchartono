@@ -1,8 +1,54 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/-vSzXkEt)
-
 # Welcome to PassePort
 
-This is Abigail Cherdy Hartono's from Team 3 Module Assignment
+This is Abigail Cherdy Hartono's from Team 3 Module & Checkpoint Assignment
+
+## Details about the Module Assignment
+On this module assignment, the main deliverables are:
+
+- Deploying the website on netlify
+- Writing a Readme.MD containing Netlify Sign Up and Deployment Process
+- Auto Deployment on GitHub with Netlify
+- Connecting custom domain and DNS accordingly
+
+## Module Assignment Submission
+### PassePort Website: 
+
+## Deployment Documentation
+
+### Sign Up on Netlify
+
+1. Go to https://www.netlify.com/
+2. Click on SignUp
+    ![Netlify SignUp](assets/netlify-signup.png)
+3. Select SignUp using GitHub
+    ![SignUp with Github](assets/signup-github.png)
+4. Enter your GitHub Credentials
+    ![GitHub Creds](assets/github-credentials.png)
+5. Congratulations! You've successfully logged in to Netlify!
+
+
+### Deployment on Netlify
+
+1. On your homepage on Netlify, go on to **Sites**
+    ![Netlify Home](assets/netlify-home.png)
+2. Click on **New Site** and select _import from existing project_
+    ![GitHub Deployment](assets/netlify-newsite.png)
+3. Select _deploy with GitHub_ as your deployment option
+    ![deployment option](assets/deploy-options.png)
+4. Select the correct Repository on your GitHub account. Be sure that you are in the correct organisation.
+    ![GitHub Creds](assets/select-repo.png)
+5. Fill in your deployment details, make sure you select the right branch, If you leave the Site Name as empty, Netlify will assign a random unused domain name for your site. Once done, click on **Deploy**
+    ![Deployment Details](assets/site-details.png)
+6. Once you've deployed your site, Netlify will take some time to deploy your site. At this point, all you need to do is wait.
+    ![Deployment Progress](assets/deploy-progress.png)
+7. Your Deployment is completed once you can see your domain url under your site name.
+    ![Deployment Successful](assets/deployed.png)
+8. Congratulations! You just successfully deployed your site directly from GitHub!
+
+
+
+
+
 
 ## Details about the Checkpoint Assigment
 
@@ -16,7 +62,7 @@ On this checkpoint assignment, the main deliverables are:
 - Creating animation using animation and transition
 
 
-## Checkpoint Assignment Details
+## Checkpoint Assignment Submission
 
 My submission on this checkpoint assignment is [index.html](index.html), [style.css](style.css), and [script.js](script.js). In addition, [assets folder](/assets) contains all assets related to the project. This is my submission on the Checkpoint Assignment and will be deployed and developed further for my submission on the **Module 2 Assignment**.
 
@@ -59,6 +105,3 @@ This page contains an image carousel implemented using only CSS and HTML. The ci
 The footer has the author details, and a button to switch mode. When click, it will switch the whole page into Dark Mode or vice versa. There is a DOM local storage update through js so the mode chosen will pertain regardless of closing the tab. 
 
 ![The dark mode](assets/darkmode.png)
-
-
-## Module Assignent
