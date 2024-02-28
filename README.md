@@ -46,8 +46,27 @@ On this module assignment, the main deliverables are:
 8. Congratulations! You just successfully deployed your site directly from GitHub!
 
 
+### Initializing your Custom Domain on Netlify
 
+1. Go to your Netlify Account, then login.
 
+2. Go to _Site_ then select the website that you want to set up the custom domain for. 
+    ![Select your site](assets/netlifyhome.png)
+3. Click on _Domain Management_.
+    ![Domain Management](assets/domain-management.png)
+4. Click on _Add a Domain_.
+    ![Add a domain](assets/add-domain.png)
+5. Enter the domain name that you have owned, then click on _Verify_, then _Add Domain_
+    ![Enter domain](assets/enter-domain.png)
+6. You will be redirected to your _Production Domain_ page, then next to your domain name, click on _Options_ then select _Go to DNS Panel_
+    ![DNS Panel](assets/dns-panel.png)
+7. Scroll down to your Name Servers, then copy all of the listed name servers and save them to clipboard, or any text editor. (This step is taken just to keep these nameservers).
+    ![Nameservers](assets/name-servers.png)
+8. Go to your **Domain Registrar**, login and go to your Custom Domain's domain management, then go to the DNS/Nameserver page. 
+    ![Manage Domain](assets/manage-domain.png)
+9. Click on Change Nameservers, then paste all the copied nameservers into the 4 available fields.
+    ![Change nameservers](assets/change-nameservers.png)
+10. It will take 24 hours for your nameservers changes to propegate. After 24 hours, check again and your custom domain should now be connected to your
 
 
 ## Details about the Checkpoint Assigment
