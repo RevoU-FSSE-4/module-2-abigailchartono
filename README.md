@@ -2,7 +2,7 @@
 
 This is Abigail Cherdy Hartono's from Team 3 Module & Checkpoint Assignment
 
-## Details about the Module Assignment
+## Details about the Advanced Module Assignment
 On this module assignment, the main deliverables are:
 
 - Deploying the website on netlify
