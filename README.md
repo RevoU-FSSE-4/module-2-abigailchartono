@@ -11,7 +11,8 @@ On this module assignment, the main deliverables are:
 - Connecting custom domain and DNS accordingly
 
 ## Module Assignment Submission
-### PassePort Website: 
+### PassePort Website: http://passeport.site
+### Alternative link to website: https://abigailcherdyhartono-passeport.netlify.app/
 
 ## Deployment Documentation
 
